@@ -1,0 +1,23 @@
+﻿{
+  "name": "bRealTime Biddr360 Extension",
+  "description": "Analyze the page for bRealTime Header Bidding.",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "icons": {
+    "128": "brt_icon.png"
+  },
+  "browser_action": {
+    "default_icon": "brt_icon.png",
+    "default_title": "bRealTime Biddr360 Extension",
+    "default_popup": "popup.html"
+  },
+  "author": "Nick Colletti",
+  "permissions": [
+    "activeTab",
+    "background"
+    ],
+  "background": {
+    "persistent": true,
+    "scripts": [ "background.js" ]
+  }
+}
