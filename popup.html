@@ -1,17 +1,69 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>bRealTime Biddr360 Extension</title>
-    <script src="brt.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EMX Biddr360 Biddr Findr</title>
+    <script src="emx.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+<style>
+body {
+    min-width:500px;
+}
+#container {
+    background-color: lightgrey;
+}
+#loadInspector{
+    height: 0;
+    transform: scale(0);
+    transition: transform .5s;
+}
+#loadInspector.active {
+    transform: scale(1);
+    display: block;
+    height: 122px;
+}
+
+#checkPage{
+    transform: scale(1);
+    transition: transform .1s;
+}
+#checkPage.inactive {
+    transform: scale(0);
+    height: 0;
+}
+
+.spacing {
+    height: 100px;
+}
+</style>
 
 <body>
-<h1>bRealTime Biddr360 Extension</h1>
-    <button id="checkPage">Check this page now!</button>
-<div id="result">
-</div>
+    <div class="container">
+        <div class="row">
+            <h4 class="display-4">EMX Biddr Findr</h4>
+        </div>
+        <div class="row">
+            <button id="checkPage" type="button" class="btn btn-primary">Check this page now!</button>
+        </div>
+        <div class="row">
+            <div id="results-container" class="alert alert-secondary" role="alert">
+                <p id="result">Results here:</p>
+              </div>
+        </div>
+
+        <div class="row">
+            <button id="loadInspector" type="button" class="btn btn-primary">Load Biddr360 Ad Inspector</button>
+        </div>
+
+        <div class="row">
+            <div class="spacing">
+            </div>
+        </div>
+
+    </div>
 
 </body>
-
 </html>

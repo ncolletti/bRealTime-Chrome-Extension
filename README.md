@@ -1,12 +1,15 @@
-# bRealTime-Chrome-Extension
-Creating a Chrome extension to view Publisher bRealTime 360 Header Bidding information
+# EMX Biddr360 Biddr Findr Chrome Extension
+Useful in house Chrome extension to view EMX Digital Header Bidding information
 
-Initial load of base files on 12/14. 
+## New Updates!
+Revisiting and updating this extension for new functionality.
+Adding bootstrap styling and more components.
 
-Functionality will include:
-1) Being able to read if bRealTime Header Bidding is included on the page.
-2) Seeing what demand partners are setup.
+## How to use
+```
+Git clone https://github.com/ncolletti/bRealTime-Chrome-Extension
 
+Open Chrome > type 'chrome://extensions' in the URL > Check Developer Mode > Click Load unpacked and choose the folder for this repo on your computer
 
-Future consideration:
-1) Complete reproduction of biddr console product in extension.
+You should see three bar graphs icon in your toolbar, click to access the extension.
+```
